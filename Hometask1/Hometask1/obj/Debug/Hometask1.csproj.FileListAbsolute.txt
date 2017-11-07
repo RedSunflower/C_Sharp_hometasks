@@ -1,0 +1,7 @@
+D:\C#_tutotials\Hometask1\Hometask1\bin\Debug\Hometask1.exe.config
+D:\C#_tutotials\Hometask1\Hometask1\bin\Debug\Hometask1.exe
+D:\C#_tutotials\Hometask1\Hometask1\bin\Debug\Hometask1.pdb
+D:\C#_tutotials\Hometask1\Hometask1\obj\Debug\Hometask1.csprojResolveAssemblyReference.cache
+D:\C#_tutotials\Hometask1\Hometask1\obj\Debug\Hometask1.csproj.CoreCompileInputs.cache
+D:\C#_tutotials\Hometask1\Hometask1\obj\Debug\Hometask1.exe
+D:\C#_tutotials\Hometask1\Hometask1\obj\Debug\Hometask1.pdb

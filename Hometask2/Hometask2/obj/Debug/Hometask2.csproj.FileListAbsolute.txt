@@ -1,0 +1,7 @@
+C:\Users\Tanya\source\repos\Hometask2\Hometask2\bin\Debug\Hometask2.exe.config
+C:\Users\Tanya\source\repos\Hometask2\Hometask2\bin\Debug\Hometask2.exe
+C:\Users\Tanya\source\repos\Hometask2\Hometask2\bin\Debug\Hometask2.pdb
+C:\Users\Tanya\source\repos\Hometask2\Hometask2\obj\Debug\Hometask2.csprojResolveAssemblyReference.cache
+C:\Users\Tanya\source\repos\Hometask2\Hometask2\obj\Debug\Hometask2.csproj.CoreCompileInputs.cache
+C:\Users\Tanya\source\repos\Hometask2\Hometask2\obj\Debug\Hometask2.exe
+C:\Users\Tanya\source\repos\Hometask2\Hometask2\obj\Debug\Hometask2.pdb
