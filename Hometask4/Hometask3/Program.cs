@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,18 +11,18 @@ namespace Hometask3
     {
         static void Main(string[] args)
         {
-            Console.Write("Please enter number of elements ");
-            string userElementNumber = Console.ReadLine();
-            int userArrayLength;
-            bool isNumber = int.TryParse(userElementNumber, out userArrayLength);
-            if (isNumber)
-                Console.WriteLine($"You entered number:  {userArrayLength}");
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("You entered not a number!!");
-                Console.ForegroundColor = ConsoleColor.White;
-            }
+            //Console.Write("Please enter number of elements ");
+           // string userElementNumber = Console.ReadLine();
+            int userArrayLength = GetInt("Please enter number of elements ");
+            //bool isNumber = int.TryParse(userElementNumber, out userArrayLength);
+            //if (isNumber)
+            //    Console.WriteLine($"You entered number:  {userArrayLength}");
+            //else
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine("You entered not a number!!");
+            //    Console.ForegroundColor = ConsoleColor.White;
+            //}
 
             Shape[] shapes = new Shape[userArrayLength];
             if (userArrayLength == 0)
@@ -47,7 +48,7 @@ namespace Hometask3
                     Console.WriteLine(" Enter radius value : ");
                     string radius = Console.ReadLine();
                     double tempR;
-                    bool isRNumber = double.TryParse(radius, out tempR);
+                    bool isRNumber = double.TryParse(radius, NumberStyles.Any, CultureInfo.InvariantCulture, out tempR);
                     if (shapes[count] is Circle)
                     {
 
@@ -135,6 +136,20 @@ namespace Hometask3
                 }
             }
             Console.ReadKey();
+        }
+
+        public static int GetInt(string userText)
+        {
+            int result = 0;
+            bool isNumber = false;
+            while (isNumber)
+            {
+                Console.WriteLine(userText);
+                isNumber = int.TryParse(Console.ReadLine(), out result);
+                if(!isNumber)
+                    Console.WriteLine("Error");
+            }
+            return result;
         }
     }
 }
